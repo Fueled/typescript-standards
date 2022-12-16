@@ -1,9 +1,12 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin"
   ],
   extends: [
+    "eslint:recommended",
+    "plugin:eslint-plugin/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
@@ -29,6 +32,50 @@ module.exports = {
     }
   ],
   rules: {
+    // Disallow await inside of loops
+    // https://eslint.org/docs/latest/rules/no-await-in-loop
+    "no-await-in-loop": ["error"],
+
+    // Disallow duplicate module imports
+    // https://eslint.org/docs/latest/rules/no-duplicate-imports
+    "no-duplicate-imports": ["error"],
+
+    // Require return statements to either always or never specify values
+    // https://eslint.org/docs/latest/rules/consistent-return
+    "consistent-return": ["error"],
+
+    // Require the use of === and !==
+    // https://eslint.org/docs/latest/rules/eqeqeq
+    "eqeqeq": ["error", "always"],
+
+    // Disallow the use of console
+    // https://eslint.org/docs/latest/rules/no-console
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    
+    // Disallow reassigning function parameters
+    // https://eslint.org/docs/latest/rules/no-param-reassign
+    "no-param-reassign": ["error", { "props": false }],
+
+    // Disallow the unary operators ++ and --
+    // https://eslint.org/docs/latest/rules/no-plusplus
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+
+    // Disallow variable declarations from shadowing variables declared in the outer scope
+    // https://eslint.org/docs/latest/rules/no-shadow
+    "no-shadow": ["error", { "hoist": "functions" }],
+
+    // Require let or const instead of var
+    // https://eslint.org/docs/latest/rules/no-var
+    "no-var": ["error"],
+
+    // Require const declarations for variables that are never reassigned after declared
+    // https://eslint.org/docs/latest/rules/prefer-const
+    "prefer-const": ["error"],
+
+    // Disallow async functions which have no await expression
+    // https://eslint.org/docs/latest/rules/require-await
+    "require-await": ["error"],
+
     // Enforce T[] syntax for arrays over Array<T>.
     // https://typescript-eslint.io/rules/array-type
     "@typescript-eslint/array-type": [
