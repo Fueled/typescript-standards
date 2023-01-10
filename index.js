@@ -66,10 +66,6 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/no-shadow
     "no-shadow": ["error", { "hoist": "functions" }],
 
-    // Require let or const instead of var
-    // https://eslint.org/docs/latest/rules/no-var
-    "no-var": ["error"],
-
     // Enforce T[] syntax for arrays over Array<T>.
     // https://typescript-eslint.io/rules/array-type
     "@typescript-eslint/array-type": [
