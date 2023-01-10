@@ -33,10 +33,6 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/no-await-in-loop
     "no-await-in-loop": ["error"],
 
-    // Disallow duplicate module imports
-    // https://eslint.org/docs/latest/rules/no-duplicate-imports
-    "no-duplicate-imports": ["error"],
-
     // Require the use of === and !==
     // https://eslint.org/docs/latest/rules/eqeqeq
     "eqeqeq": ["error", "always"],
