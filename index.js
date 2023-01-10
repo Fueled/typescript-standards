@@ -37,10 +37,6 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/no-duplicate-imports
     "no-duplicate-imports": ["error"],
 
-    // Require return statements to either always or never specify values
-    // https://eslint.org/docs/latest/rules/consistent-return
-    "consistent-return": ["error"],
-
     // Require the use of === and !==
     // https://eslint.org/docs/latest/rules/eqeqeq
     "eqeqeq": ["error", "always"],
