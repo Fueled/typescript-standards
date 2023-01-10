@@ -57,7 +57,12 @@ module.exports = {
 
     // Disallow the unary operators ++ and --
     // https://eslint.org/docs/latest/rules/no-plusplus
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-plusplus": [
+      "error", 
+      { 
+        "allowForLoopAfterthoughts": true
+      }
+    ],
 
     // Disallow variable declarations from shadowing variables declared in the outer scope
     // https://eslint.org/docs/latest/rules/no-shadow
