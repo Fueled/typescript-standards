@@ -74,10 +74,6 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/prefer-const
     "prefer-const": ["error"],
 
-    // Disallow async functions which have no await expression
-    // https://eslint.org/docs/latest/rules/require-await
-    "require-await": ["error"],
-
     // Enforce T[] syntax for arrays over Array<T>.
     // https://typescript-eslint.io/rules/array-type
     "@typescript-eslint/array-type": [
