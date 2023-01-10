@@ -61,7 +61,12 @@ module.exports = {
 
     // Disallow variable declarations from shadowing variables declared in the outer scope
     // https://eslint.org/docs/latest/rules/no-shadow
-    "no-shadow": ["error", { "hoist": "functions" }],
+    "no-shadow": [
+      "error", 
+      { 
+        "hoist": "functions"
+      }
+    ],
 
     // Enforce T[] syntax for arrays over Array<T>.
     // https://typescript-eslint.io/rules/array-type
