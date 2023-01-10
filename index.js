@@ -29,13 +29,13 @@ module.exports = {
     }
   ],
   rules: {
-    // Disallow await inside of loops
-    // https://eslint.org/docs/latest/rules/no-await-in-loop
-    "no-await-in-loop": ["error"],
-
     // Require the use of === and !==
     // https://eslint.org/docs/latest/rules/eqeqeq
     "eqeqeq": ["error", "always"],
+
+    // Disallow await inside of loops
+    // https://eslint.org/docs/latest/rules/no-await-in-loop
+    "no-await-in-loop": ["error"],
 
     // Disallow the use of console
     // https://eslint.org/docs/latest/rules/no-console
