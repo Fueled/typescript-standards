@@ -39,7 +39,12 @@ module.exports = {
 
     // Disallow the use of console
     // https://eslint.org/docs/latest/rules/no-console
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-console": [
+      "error",
+      { 
+        "allow": ["warn", "error"] 
+      }
+    ],
     
     // Disallow reassigning function parameters
     // https://eslint.org/docs/latest/rules/no-param-reassign
