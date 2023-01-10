@@ -70,10 +70,6 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/no-var
     "no-var": ["error"],
 
-    // Require const declarations for variables that are never reassigned after declared
-    // https://eslint.org/docs/latest/rules/prefer-const
-    "prefer-const": ["error"],
-
     // Enforce T[] syntax for arrays over Array<T>.
     // https://typescript-eslint.io/rules/array-type
     "@typescript-eslint/array-type": [
