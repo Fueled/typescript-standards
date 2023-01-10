@@ -54,7 +54,12 @@ module.exports = {
     
     // Disallow reassigning function parameters
     // https://eslint.org/docs/latest/rules/no-param-reassign
-    "no-param-reassign": ["error", { "props": false }],
+    "no-param-reassign": [
+      "error", 
+      { 
+        "props": false,
+      }
+    ],
 
     // Disallow the unary operators ++ and --
     // https://eslint.org/docs/latest/rules/no-plusplus
