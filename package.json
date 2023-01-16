@@ -18,14 +18,13 @@
     "useTabs": false
   },
   "dependencies": {
-    "eslint-plugin-jest": "^27.1.7"
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-jest": "^27.1.7",
+    "eslint-plugin-prettier": "^4.2.1"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.46.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-eslint-plugin": "^5.0.6",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.3",
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
