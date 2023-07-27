@@ -1,13 +1,13 @@
 {
-  "name": "eslint-config-fueled",
+  "name": "eslint-config-fueled-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fueled TypeScript ESLint config for Node.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE.md",
   "prettier": {
     "bracketSpacing": true,
     "printWidth": 100,

@@ -1,0 +1,19 @@
+{
+  "name": "typescript-standards",
+  "version": "1.0.0",
+  "description": "A collection of various TypeScript standards and style guides used internally at Fueled.",
+  "scripts": {
+    "preinstall": "npm run install:config:node",
+    "install:config:node": "cd packages/eslint-config-fueled-node && npm prune && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fueled/typescript-standards.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/Fueled/typescript-standards/issues"
+  },
+  "homepage": "https://github.com/Fueled/typescript-standards"
+}
