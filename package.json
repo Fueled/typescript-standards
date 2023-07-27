@@ -10,7 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/Fueled/typescript-standards.git"
   },
-  "author": "",
+  "contributors": [
+    {
+      "name": "Kaspars Zarinovs",
+      "email": "kaspars@fueled.com"
+    },
+    {
+      "name": "Sergey Podatelev",
+      "email": "sergey@fueled.com"
+    }
+  ],
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/Fueled/typescript-standards/issues"

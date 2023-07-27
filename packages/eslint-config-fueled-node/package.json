@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "Fueled TypeScript ESLint config for Node.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "scripts": {},
+  "contributors": [
+    {
+      "name": "Kaspars Zarinovs",
+      "email": "kaspars@fueled.com"
+    },
+    {
+      "name": "Sergey Podatelev",
+      "email": "sergey@fueled.com"
+    }
+  ],
   "license": "SEE LICENSE IN LICENSE.md",
   "prettier": {
     "bracketSpacing": true,
