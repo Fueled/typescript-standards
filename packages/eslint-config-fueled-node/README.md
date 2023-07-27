@@ -47,9 +47,6 @@ Prefer nullish coalescing operator.
 #### [@typescript-eslint/prefer-optional-chain](https://typescript-eslint.io/rules/prefer-optional-chain)
 Prefer optional chaining operator.
 
-#### [@typescript-eslint/promise-function-async](https://typescript-eslint.io/rules/promise-function-async)
-Ensure all functions that return a promise are marked as async.
-
 #### [@typescript-eslint/restrict-template-expressions](https://typescript-eslint.io/rules/restrict-template-expressions)
 Restrict template expressions to allow for string & number types only.  
 Other types must be checked explicitly.
