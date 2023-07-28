@@ -2,6 +2,13 @@
 
 [Prettier](https://prettier.io/) rules used for TypeScript & JavaScript within Fueled, for Node applications.
 
+## Installation
+TBD
+
+## Usage
+TBD
+
+
 ## Rules
 
 - [Bracket Spacing](https://prettier.io/docs/en/options.html#bracket-spacing) Add spaces between brackets in object literals.
