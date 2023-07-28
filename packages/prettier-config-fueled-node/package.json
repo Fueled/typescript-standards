@@ -1,0 +1,16 @@
+{
+  "name": "prettier-config-fueled-node",
+  "version": "1.0.0",
+  "description": "Fueled TypeScript Prettier config for Node.",
+  "main": ".prettierrc.js",
+  "contributors": [
+    {
+      "name": "Kaspars Zarinovs",
+      "email": "kaspars@fueled.com"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "prettier": "^2.8.3"
+  }
+}

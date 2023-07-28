@@ -1,34 +1,28 @@
 {
-  "name": "eslint-config-fueled",
+  "name": "typescript-standards",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A collection of various TypeScript standards and style guides used internally at Fueled.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npm run install:config:node",
+    "install:config:node": "cd packages/eslint-config-fueled-node && npm prune && npm install"
   },
-  "author": "",
-  "license": "ISC",
-  "prettier": {
-    "bracketSpacing": true,
-    "printWidth": 100,
-    "semi": true,
-    "singleQuote": false,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fueled/typescript-standards.git"
   },
-  "dependencies": {
-    "@typescript-eslint/parser": "^5.48.2",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-jest": "^27.1.7",
-    "eslint-plugin-prettier": "^4.2.1"
+  "contributors": [
+    {
+      "name": "Kaspars Zarinovs",
+      "email": "kaspars@fueled.com"
+    },
+    {
+      "name": "Sergey Podatelev",
+      "email": "sergey@fueled.com"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/Fueled/typescript-standards/issues"
   },
-  "devDependencies": {
-    "prettier": "^2.8.3",
-    "typescript": "^4.9.4"
-  },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "eslint": "^8.29.0"
-  }
+  "homepage": "https://github.com/Fueled/typescript-standards"
 }

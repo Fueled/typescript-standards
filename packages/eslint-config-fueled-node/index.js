@@ -1,5 +1,8 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: ['./tsconfig.json'],
+  },
   plugins: [
     "@typescript-eslint"
   ],
@@ -41,16 +44,16 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/no-console
     "no-console": [
       "error",
-      { 
-        "allow": ["warn", "error"] 
+      {
+        "allow": ["warn", "error"]
       }
     ],
-    
+
     // Disallow reassigning function parameters
     // https://eslint.org/docs/latest/rules/no-param-reassign
     "no-param-reassign": [
-      "error", 
-      { 
+      "error",
+      {
         "props": false,
       }
     ],
@@ -58,8 +61,8 @@ module.exports = {
     // Disallow the unary operators ++ and --
     // https://eslint.org/docs/latest/rules/no-plusplus
     "no-plusplus": [
-      "error", 
-      { 
+      "error",
+      {
         "allowForLoopAfterthoughts": true
       }
     ],
@@ -67,8 +70,8 @@ module.exports = {
     // Disallow variable declarations from shadowing variables declared in the outer scope
     // https://eslint.org/docs/latest/rules/no-shadow
     "no-shadow": [
-      "error", 
-      { 
+      "error",
+      {
         "hoist": "functions"
       }
     ],
@@ -165,10 +168,6 @@ module.exports = {
     // Prefer optional chaining operator.
     // https://typescript-eslint.io/rules/prefer-optional-chain
     "@typescript-eslint/prefer-optional-chain": "warn",
-
-    // Ensure all functions that return a promise are marked as async.
-    // https://typescript-eslint.io/rules/promise-function-async
-    "@typescript-eslint/promise-function-async": "error",
 
     // Restrict template expressions to allow for string & number types only.
     // Other types must be checked explicitly.

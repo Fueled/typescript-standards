@@ -3,7 +3,7 @@ All rights reserved.
 
 This software consists of voluntary contributions made by many individuals. For
 exact contribution history, see the revision history available at
-https://github.com/Fueled/django-init
+https://github.com/Fueled/typescript-standards
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -15,7 +15,7 @@ are permitted provided that the following conditions are met:
   list of conditions and the following disclaimer in the documentation and/or
   other materials provided with the distribution.
 
-* Neither the name of "django-init" nor the names of its contributors may
+* Neither the name of "typescript-standards" nor the names of its contributors may
   be used to endorse or promote products derived from this software without
   specific prior written permission.
 
