@@ -1,5 +1,5 @@
 {
-  "name": "typescript-standards",
+  "name": "@fueled/typescript-standards",
   "version": "1.0.0",
   "description": "A collection of various TypeScript standards and style guides used internally at Fueled.",
   "scripts": {

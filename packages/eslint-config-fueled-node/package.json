@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-fueled-node",
+  "name": "@fueled/eslint-config-fueled-node",
   "version": "1.0.0",
   "description": "Fueled TypeScript ESLint config for Node.",
   "main": "index.js",
