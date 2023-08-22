@@ -11,15 +11,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["**/*.spec.ts"],
+      files: ["**/*.spec.ts", "**/*.e2e-spec.ts"],
       plugins: ["jest"],
       extends: ["plugin:jest/recommended"],
       env: {
         jest: true,
       },
-    },
-    {
-      files: ["**/*.e2e-spec.ts"],
       rules: {
         // We want to disable these, as they do not play well with supertest.
         "jest/expect-expect": "off",
