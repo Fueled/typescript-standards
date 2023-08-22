@@ -1,15 +1,11 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: ['./tsconfig.json'],
+    project: ["./tsconfig.json"],
+    sourceType: "module",
   },
-  plugins: [
-    "@typescript-eslint"
-  ],
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
+  plugins: ["@typescript-eslint"],
+  extends: ["plugin:@typescript-eslint/recommended", "prettier"],
   env: {
     node: true,
   },
@@ -19,22 +15,22 @@ module.exports = {
       plugins: ["jest"],
       extends: ["plugin:jest/recommended"],
       env: {
-        jest: true
-      }
+        jest: true,
+      },
     },
     {
       files: ["**/*.e2e-spec.ts"],
       rules: {
         // We want to disable these, as they do not play well with supertest.
         "jest/expect-expect": "off",
-        "@typescript-eslint/no-floating-promises": "off"
-      }
-    }
+        "@typescript-eslint/no-floating-promises": "off",
+      },
+    },
   ],
   rules: {
     // Require the use of === and !==
     // https://eslint.org/docs/latest/rules/eqeqeq
-    "eqeqeq": ["error", "always"],
+    eqeqeq: ["error", "always"],
 
     // Disallow await inside of loops
     // https://eslint.org/docs/latest/rules/no-await-in-loop
@@ -45,8 +41,8 @@ module.exports = {
     "no-console": [
       "error",
       {
-        "allow": ["warn", "error"]
-      }
+        allow: ["warn", "error"],
+      },
     ],
 
     // Disallow reassigning function parameters
@@ -54,8 +50,8 @@ module.exports = {
     "no-param-reassign": [
       "error",
       {
-        "props": false,
-      }
+        props: false,
+      },
     ],
 
     // Disallow the unary operators ++ and --
@@ -63,8 +59,8 @@ module.exports = {
     "no-plusplus": [
       "error",
       {
-        "allowForLoopAfterthoughts": true
-      }
+        allowForLoopAfterthoughts: true,
+      },
     ],
 
     // Disallow variable declarations from shadowing variables declared in the outer scope
@@ -72,8 +68,8 @@ module.exports = {
     "no-shadow": [
       "error",
       {
-        "hoist": "functions"
-      }
+        hoist: "functions",
+      },
     ],
 
     // Enforce T[] syntax for arrays over Array<T>.
@@ -81,8 +77,8 @@ module.exports = {
     "@typescript-eslint/array-type": [
       "error",
       {
-        "default": "array"
-      }
+        default: "array",
+      },
     ],
 
     // Enforce function return types.
@@ -90,10 +86,10 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
-        "allowExpressions": true,
-        "allowHigherOrderFunctions": true,
-        "allowTypedFunctionExpressions": true
-      }
+        allowExpressions: true,
+        allowHigherOrderFunctions: true,
+        allowTypedFunctionExpressions: true,
+      },
     ],
 
     // Enforce explicit return & argument types on exported functions & public class methods.
@@ -105,9 +101,9 @@ module.exports = {
     "@typescript-eslint/no-inferrable-types": [
       "warn",
       {
-        "ignoreParameters": true,
-        "ignoreProperties": true
-      }
+        ignoreParameters: true,
+        ignoreProperties: true,
+      },
     ],
 
     // Disallow explicit `any` types. Use `unknown` instead.
@@ -115,8 +111,8 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": [
       "error",
       {
-        "ignoreRestArgs": true
-      }
+        ignoreRestArgs: true,
+      },
     ],
 
     // Require Promise-like statements to be handled appropriately.
@@ -134,13 +130,15 @@ module.exports = {
     "no-restricted-syntax": [
       "error",
       {
-        "selector": "LabeledStatement",
-        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+        selector: "LabeledStatement",
+        message:
+          "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
       },
       {
-        "selector": "WithStatement",
-        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
-      }
+        selector: "WithStatement",
+        message:
+          "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
+      },
     ],
 
     // Avoid unnecessary conditionals.
@@ -175,12 +173,12 @@ module.exports = {
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
-        "allowNumber": true,
-        "allowBoolean": false,
-        "allowAny": false,
-        "allowNullish": false,
-        "allowRegExp": false
-      }
+        allowNumber: true,
+        allowBoolean: false,
+        allowAny: false,
+        allowNullish: false,
+        allowRegExp: false,
+      },
     ],
 
     // Disallow async functions which have no await expression and do not return a promise.
@@ -190,6 +188,6 @@ module.exports = {
 
     // Enforce covering all cases in a switch statement.
     // https://typescript-eslint.io/rules/switch-exhaustiveness-check/
-    "@typescript-eslint/switch-exhaustiveness-check": "error"
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
   },
 };

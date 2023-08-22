@@ -1,9 +1,12 @@
 {
   "name": "@fueled/eslint-config-fueled-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fueled TypeScript ESLint config for Node.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "format": "prettier *.js",
+    "format:fix": "prettier --write *.js"
+  },
   "contributors": [
     {
       "name": "Kaspars Zarinovs",
@@ -16,13 +19,7 @@
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "prettier": {
-    "bracketSpacing": true,
-    "printWidth": 100,
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
+    "printWidth": 100
   },
   "dependencies": {
     "@typescript-eslint/parser": "^5.48.2",
