@@ -1,6 +1,6 @@
 {
   "name": "@fueled/prettier-config-fueled-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fueled TypeScript Prettier config for Node.",
   "main": ".prettierrc.js",
   "contributors": [
