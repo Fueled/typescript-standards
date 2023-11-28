@@ -5,7 +5,7 @@
 ## Code Standards
 
 ### ESLint
-- ESLint configuration for Node applications: [eslint-config-fueled-node](packages/eslint-config-fueled-node)
+- ESLint configuration for TypeScript based Node applications: [eslint-config-fueled-node](packages/eslint-config-fueled-node)
 
 ### EditorConfig
 
