@@ -140,7 +140,7 @@ module.exports = {
 
     // Avoid unnecessary conditionals.
     // https://typescript-eslint.io/rules/no-unnecessary-condition
-    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-condition": "warn",
 
     // Warn against unnecessary type assertions.
     // https://typescript-eslint.io/rules/no-unnecessary-type-assertion
